@@ -18,35 +18,43 @@ public class CloudVendor {
         this.vendorPhoneNumber = vendorPhoneNumber;
     }
 
-    public String getVendorId() {
+    public String getVendorId()
+    {
         return vendorId;
     }
 
-    public String getVendorName() {
+    public String getVendorName()
+    {
         return vendorName;
     }
 
-    public String getVendorAddress() {
+    public String getVendorAddress()
+    {
         return vendorAddress;
     }
 
-    public String getVendorPhoneNumber() {
+    public String getVendorPhoneNumber()
+    {
         return vendorPhoneNumber;
     }
 
-    public void setVendorId(String vendorId) {
+    public void setVendorId(String vendorId)
+    {
         this.vendorId = vendorId;
     }
 
-    public void setVendorName(String vendorName) {
+    public void setVendorName(String vendorName)
+    {
         this.vendorName = vendorName;
     }
 
-    public void setVendorAddress(String vendorAddress) {
+    public void setVendorAddress(String vendorAddress)
+    {
         this.vendorAddress = vendorAddress;
     }
 
-    public void setVendorPhoneNumber(String vendorPhoneNumber) {
+    public void setVendorPhoneNumber(String vendorPhoneNumber)
+    {
         this.vendorPhoneNumber = vendorPhoneNumber;
     }
 }
