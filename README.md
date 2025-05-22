@@ -15,4 +15,10 @@
 In this next Step we will build Cloud Vendor Information Service which will interact with the database(MySQL) and it will be also be exposing the Rest API (GET, POST, PUT, DELETE). 
 
 **Now the Layer that will go in the Cloud Vendoe API Service.**
+<img width="1125" alt="image" src="https://github.com/user-attachments/assets/dff7018a-fb59-4a51-b0d3-035d1bc9d5fd" />
+In cloud Vendor Information Service we will be building 3 Layers:-
+1) Controller layer
+2) Business/Service Layer
+3) Database/ Repository Layer
+
 
