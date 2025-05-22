@@ -9,7 +9,7 @@
 
 
 
-**Next Version In buildeing this Project-->**
+**Next Version In building this Project-->**
 <img width="916" alt="image" src="https://github.com/user-attachments/assets/c03f28d1-5bbe-49f9-9d4d-83174dafa8ca" />
 
 In this next Step we will build Cloud Vendor Information Service which will interact with the database(MySQL) and it will be also be exposing the Rest API (GET, POST, PUT, DELETE). 
@@ -20,5 +20,10 @@ In cloud Vendor Information Service we will be building 3 Layers:-
 1) Controller layer
 2) Business/Service Layer
 3) Database/ Repository Layer
+in simple terms this is also called springboot project architecture.
 
+Controller Layer will be interating with the REST Client with all the CRUD(GET, POST, PUT, DELETE) operations. This REST Client will be the Postman or the Browser Window or any user interface application.
+Controller layer will also be contacting with the Business/ Service layer and also be listeining to REST client and responding to it. Business Layer wil also be in touch with the controller layer and also with the Database layer to fetch the data. Database layer will be performing all the database related operations and with also be in connection with the DB.
+
+Some part of this Controller layer is already build in the previous version but will be adding some more functionality to it.
 
