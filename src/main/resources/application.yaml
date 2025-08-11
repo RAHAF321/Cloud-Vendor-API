@@ -1,0 +1,17 @@
+spring:
+ application:
+  name: cloud-vendor-api
+
+#Database Settings
+ datasource:
+  url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL=false
+  username: root
+  password: root@123
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #JPA Settings
+  jpa:
+   hibernate:
+     ddl_auto: update
+   database-platform: org.hibernate.dialect.MySQL8Dialect
+   show-sql: true

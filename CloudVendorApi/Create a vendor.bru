@@ -1,0 +1,24 @@
+meta {
+  name: Create a vendor
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/cloud_vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "vendorId":"C3",
+    "vendorName":"vendor Three",
+    "vendorAddress":"Address Three",
+    "vendorPhoneNumber":"Three"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

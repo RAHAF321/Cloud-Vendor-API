@@ -1,0 +1,24 @@
+meta {
+  name: Update Vendor Details
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/cloud_vendor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "vendorId": "C5",
+      "vendorName": "vendor Five",
+      "vendorAddress": "Address Five",
+      "vendorPhoneNumber": "Five"
+    }
+}
+
+settings {
+  encodeUrl: true
+}
