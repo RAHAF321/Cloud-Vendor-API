@@ -31,3 +31,10 @@ Some part of this Controller layer is already build in the previous version but 
 
 **Added the Custome Response Feature instead of the Generic response** for the GET by id & GET all vendor details.
 
+**Unit Testing with Junit + Mockito + AssertJ + H2 DataBase + SpringBoot Test Library**
+Unit Test-> test all the smallest part of the program to ensure every part is working as expected. (& to get the code coverage)
+**Junit** is the testing framework for java.(Developer side testing for code)
+**AssertJ** is another java library .It provides a set of assertions mostly helpful in error messages.
+**Mockito** is the mocking framework for Java. Helps write clean & simple API. Test are readable & creates clean verification errors.
+**H2 DataBase** is the in-memory Database
+
