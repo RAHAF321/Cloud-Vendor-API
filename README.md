@@ -27,3 +27,7 @@ Controller layer will also be contacting with the Business/ Service layer and al
 
 Some part of this Controller layer is already build in the previous version but will be adding some more functionality to it.
 
+**Added Exceptional handling features** for the situaltion like the vendor is not present. eg:- vendor is searched by ID via GET call and if no vendor is present then a proper message will be shown and the entire thing will be handled by the Excetion handling
+
+**Added the Custome Response Feature instead of the Generic response** for the GET by id & GET all vendor details.
+
