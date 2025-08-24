@@ -45,5 +45,11 @@ Unit Test-> test all the smallest part of the program to ensure every part is wo
 
 These all above comes with SpringBoot Application only we dont need to install it separately.
 
+**@Mock** => by default respository layer calls service layer then the service layer will be interating with the DataBase so in order that the sevice do not interact with the DB data (because its a test call what ever value given is not for storing in to DB is only to test using the In-memory Database then after the test need to clean it)  so in the service layer test class we are using the @Mock. So we are mocking the complete Repository layer in out servive test class.
+
+**@AutoCloseable** to close all the unwanted resources when the entire test case execution gets finished. 
+
+
+
 
 
