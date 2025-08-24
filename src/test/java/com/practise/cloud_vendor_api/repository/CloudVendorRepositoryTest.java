@@ -9,6 +9,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import java.util.List;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 @DataJpaTest
 public class CloudVendorRepositoryTest {
 
@@ -35,8 +37,15 @@ public class CloudVendorRepositoryTest {
     @Test
     void testFindByVendorName_Found(){
         List<CloudVendor> cloudVendorList = cloudVendorRepository.findByVendorName("Amazon Web Services");
-        assertThat
+        assertThat(cloudVendorList.get(0).getVendorId()).isEqualTo(cloudVendor.getVendorId());
+        assertThat(cloudVendorList.get(0).getVendorName())
+                .isEqualTo(cloudVendor.getVendorName());
     }
-    //Test case failure
 
+    //Test case failure
+    @Test
+    void testFindByVendorName_NotFound(){
+        List<CloudVendor> cloudVendorList = cloudVendorRepository.findByVendorName("Google Cloud Platform");
+        assertThat(cloudVendorList.isEmpty()).isTrue();
+    }
 }
