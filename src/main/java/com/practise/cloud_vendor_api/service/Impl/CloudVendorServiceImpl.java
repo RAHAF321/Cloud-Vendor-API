@@ -51,6 +51,7 @@ public class CloudVendorServiceImpl implements CloudVendorService {
         cloudVendorRepository.deleteById(vendorId);
         return "Cloud Vendor deleted with ID:" + vendorId;
     }
+
     @Override
     public List<CloudVendor> getAllCloudVendor(){
         if(cloudVendorRepository.findAll().isEmpty())
